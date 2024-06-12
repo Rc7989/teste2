@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.card h1 {
+    color: #ff0000;
+    font-size: 2em;
+}
+
+.card p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.heart {
+    margin: 157px;
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background-color: red;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(45deg);
+}
+
+.heart:before {
+    content: " ";
+    position: absolute;
+    height: 160px;
+    width: 100px;
+    background-color: red;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(-90deg);
+    top: 30px;
+    left: -30px;
+}
